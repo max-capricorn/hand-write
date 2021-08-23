@@ -3,7 +3,7 @@
 // type B = PickPromise<A> // number
 type PickPromise<T extends Promise<unknown>> = T extends Promise<infer K> ? K : never;
 
-type A = Promise<string>
+type A = Promise<number>
 
 type B = PickPromise<A>
 

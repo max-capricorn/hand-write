@@ -1,8 +1,13 @@
+const PENDING = 'PENDING'
+const FULFILLED = 'FULFILLED'
+const REJECTED = 'REJECTED'
+
+
 class Mpromise {
 
-  static SUCCESS = 'SUCCESS';
-  static PENDING = 'PENDING';
-  static FAILED = 'FAILED';
+  static PENDING = PENDING;
+  static FULFILLED = FULFILLED;
+  static REJECTED = REJECTED;
   constructor (executor) {
 
   }
