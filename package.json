@@ -1,0 +1,23 @@
+{
+  "name": "hand-write",
+  "version": "1.0.0",
+  "description": "- promise   手写promise 完整版 - ts-utils   ts 的一些常用技巧 - __test__.html   测试用的模版",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/max-capricorn/hand-write.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/max-capricorn/hand-write/issues"
+  },
+  "homepage": "https://github.com/max-capricorn/hand-write#readme",
+  "devDependencies": {
+    "@types/node": "^16.9.1"
+  }
+}
