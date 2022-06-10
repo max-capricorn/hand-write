@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible"
+        content="IE=edge">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+  <title>redux</title>
+</head>
+
+<body>
+
+</body>
+<script type="module"
+        crossorigin>
+          import { createStore } from './index.js'
+          import reducer from './demo/reducer/index.js'
+
+          const initialState = {
+            counter: {
+              count: 0
+            },
+            person: {
+              name: 'ws',
+              description: 'lsy'
+            }
+          }
+          const store = createStore(initialState, reducer)
+
+          store.subscribe(() => {
+            const state = store.getState()
+
+            // console.log(`🔥、${state.person.name}, 🔢 ${state.counter.count}`)
+          })
+
+          store.subscribe(() => {
+            const state = store.getState()
+            console.log(`🍎、${state}`, state)
+            // console.log(`🍎、${state.person.name}`)
+          })
+          store.dispatch({
+            type: 'INCREASE'
+          })
+          // store.dispatch({
+          //   type: 'INCREASE'
+          // })
+
+          store.dispatch({
+            type: 'addPerson'
+          })
+
+          store.dispatch({
+            type: 'removePerson'
+          })
+
+          // store.changeState({
+          //   ...store.getState(),
+          //   person: {
+          //     name: 'wssssss',
+          //     description: 'lsyyyyyyyyy'
+          //   }
+          // })
+
+        </script>
+
+</html>
